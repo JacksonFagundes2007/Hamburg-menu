@@ -5,7 +5,7 @@
 
 *example:*
 
-<img src="https://cdn.discordapp.com/attachments/811651647956189244/811652646778961941/video1.gif">
+<img width="250" src="https://cdn.discordapp.com/attachments/811651647956189244/811652646778961941/video1.gif">
 
 <br>
 
