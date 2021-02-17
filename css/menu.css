@@ -1,0 +1,127 @@
+.btn {
+  position: relative;
+
+  width: 70px;
+  height: 70px;
+
+  margin-top: 20px;
+  margin-left: 20px;
+
+  cursor: pointer;
+}
+.btn-left {
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  height: 8px;
+  width: 30px;
+  top: 30px;
+  left: 0px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.btn-left:before {
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  content: "";
+  top: -20px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.btn-left:after {
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  content: "";
+  top: 20px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.btn-right {
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  height: 8px;
+  width: 30px;
+  top: 30px;
+  left: 30px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.btn-right:before {
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  content: "";
+  top: -20px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.btn-right:after {
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  content: "";
+  top: 20px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.active .btn-left {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background: transparent;
+}
+.active .btn-left:before {
+  -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(4px, 4px);
+  transform: rotateZ(45deg) scaleX(1.4) translate(4px, 4px);
+}
+.active .btn-left:after {
+  -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(4px, -4px);
+  transform: rotateZ(-45deg) scaleX(1.4) translate(4px, -4px);
+}
+.active .btn-right {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background: transparent;
+}
+.active .btn-right:before {
+  -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(-4px, 4px);
+  transform: rotateZ(-45deg) scaleX(1.4) translate(-4px, 4px);
+}
+.active .btn-right:after {
+  -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
+  transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
+}
+
+#content-menu {
+  border-radius: 0 5px 5px 0;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  color: rgb(255, 255, 255);
+
+  /* width: 100%; */
+  
+  transition: transform linear 0.1s;
+}
+
+.remove {
+  transform: translateX(0);
+}
+
+.remove2 {
+  transform: translateX(-100%);
+}
+
+.items-menu {
+  padding: 20px;
+  padding-left: 0px;
+
+  font-family: Poppins;
+
+  font-size: 20px;
+}
